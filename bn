@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if command -v node &> /dev/null; then
+ bun "$@"
+else
+  node "$@"
+fi
