@@ -8,6 +8,8 @@ bun install
 
 To run:
 
+copy the .env.example file to .env and update the values
+
 ```bash
 bun migrate
 bun run src/index.ts

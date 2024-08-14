@@ -10,7 +10,7 @@ const envSchema = zod
       .url()
       .refine((url) => {
         const urlObj = new URL(url);
-        return urlObj.protocol === "postgresql:";
+        return urlObj.protocol === "postgresql:" || urlObj.protocol === "postgres:";
       }, "Invalid PostgreSQL URL"),
   })
   .required();
